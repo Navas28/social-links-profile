@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title> Social links profile</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Inter' , sans-serif;
+    }
+    @font-face {
+      font-family: 'Inter';
+      src: url('./assets/fonts/static/Inter-Bold.ttf');
+    }
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      background-color: #000;
+    }
+    h1{
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .container{
+      border: 1px solid #000;
+      padding: 30px;
+      width: 400px;
+      border-radius: 10px;
+      background-color: hsl(0, 0%,12%);
+    }
+    .container img{
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .profile h2{
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .profile .location {
+      color:hsl(75, 94%, 57%); 
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .profile .bio{
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .social-links a{
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 15px 20px;
+      background-color: hsl(0, 0%, 20%);
+      margin-bottom: 16px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .social-links a:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: #000;
+    }
+    @media (max-width: 375px){
+      .container{
+        width: 300px;
+      }
+      .profile h2{
+        font-size: 20px;
+      }
+      .profile .location{
+        font-size: 12px;
+      }
+      .profile .bio{
+        font-size: 12px;
+      }
+      .social-links a{
+        font-size: 12px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Social Links Profile</h1>
+    </header>
+    <div class="container">
+      <div class="profile">
+        <img src="assets/images/avatar-jessica.jpeg" alt="Jessica Randall">
+        <h2>Jessica Randall</h2>
+        <p class="location">London, United Kingdom</p>
+        <p class="bio">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="social-links">
+        <a href="#">Github</a>
+        <a href="#">Frontend Mentor</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
